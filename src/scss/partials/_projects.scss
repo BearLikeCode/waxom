@@ -1,0 +1,33 @@
+.projects {
+  padding: 90px 0 80px;
+  h2 {
+    font-family: "RalewaySemibold", sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  p {
+    font-family: "MontserratLight", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    max-width: 720px;
+  }
+  .projectsRow {
+    justify-content: center;
+    margin-bottom: 40px;
+    a {
+      font-family: "MontserratLight", sans-serif;
+      font-size: 14px;
+      padding: 10px 20px;
+      color: #8c8c8c;
+      border: 1px solid #ebebeb;
+      margin: 0 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

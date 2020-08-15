@@ -1,0 +1,123 @@
+.shortcodes {
+  background: #191919;
+  padding: 80px 0;
+  &Block {
+    max-width: 270px;
+    &Title {
+      font-family: "RalewayBold", sans-serif;
+      font-size: 24px;
+      color: #fff;
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+    &:first-child {
+      img {
+        margin-bottom: 30px;
+      }
+      p {
+        font-family: "MontserratLight", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        color: $grey;
+        margin-bottom: 30px;
+      }
+      a {
+        color: #d1d1d1;
+        position: relative;
+        font-family: "MontserratRegular", sans-serif;
+        font-size: 14px;
+        &:after {
+          position: absolute;
+          right: -13px;
+          bottom: 4px;
+          content: "";
+          width: 0;
+          height: 0;
+          border-top: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+          border-left: 5px solid #d1d1d1;
+        }
+      }
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+      .postBlock {
+        margin-bottom: 44px;
+        position: relative;
+        transition: 0.3s ease;
+        &:after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 1px;
+          background: #252525;
+          bottom: -22px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+          &:after {
+            display: none;
+          }
+        }
+        p {
+          font-family: "MontserratLight", sans-serif;
+          transition: 0.3s ease;
+          line-height: 1.5;
+          &:first-child {
+            margin-bottom: 13px;
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      .postBlock {
+        p:first-child {
+          font-size: 12px;
+          color: $dark;
+        }
+        p:last-child {
+          font-size: 14px;
+          color: $grey;
+        }
+        &:hover {
+          p:first-child {
+            color: #fff;
+          }
+          p:last-child {
+            color: #c7b299;
+          }
+        }
+      }
+    }
+    &:nth-child(3) {
+      .postBlock {
+        p:first-child {
+          font-size: 14px;
+          color: $grey;
+        }
+        p:last-child {
+          font-size: 12px;
+          color: $dark;
+        }
+        &:hover {
+          p:first-child {
+            color: #c7b299;
+          }
+          p:last-child {
+            color: #fff;
+          }
+        }
+      }
+    }
+    &:last-child {
+      img {
+        width: 130px;
+        height: 100px;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

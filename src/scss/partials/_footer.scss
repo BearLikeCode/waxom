@@ -1,0 +1,42 @@
+.footer {
+  background: #111111;
+  padding: 45px 0 50px;
+  .menu {
+    .menuItem {
+      display: inline-block;
+      position: relative;
+      margin-right: 24px;
+      &:after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 1px;
+        right: -12px;
+        background-color: #252525;
+      }
+      &:last-child {
+        margin-right: 0;
+        &:after {
+          display: none;
+        }
+      }
+      & > a {
+        color: $grey;
+        transition: 0.3s;
+        font-family: "MontserratLight", sans-serif;
+        font-size: 13px;
+        & > span {
+          font-family: "MontserratLight", sans-serif;
+          font-size: 13px;
+          color: $white;
+        }
+      }
+      & > a:hover {
+        color: #c7b299;
+        span {
+          color: #c7b299;
+        }
+      }
+    }
+  }
+}

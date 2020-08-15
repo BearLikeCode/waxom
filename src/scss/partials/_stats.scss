@@ -1,0 +1,24 @@
+.stats {
+  background: linear-gradient(to right, #211b19, #4e3427);
+  padding: 70px 0 90px;
+  .row {
+    justify-content: space-evenly;
+  }
+  .stat {
+    img {
+      margin-bottom: 30px;
+    }
+    p {
+      font-family: "MontserratLight", sans-serif;
+
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #fff;
+      &:last-child {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #b7a48d;
+      }
+    }
+  }
+}
