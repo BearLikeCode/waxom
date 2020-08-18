@@ -2,7 +2,6 @@
   padding: 85px 0 115px;
   .featureItem {
     max-width: 280px;
-    transition: all 0.5s;
     &:hover {
       .itemText {
         h3 {
@@ -26,6 +25,7 @@
           font-family: "RalewaySemibold", sans-serif;
           font-size: 22px;
           margin-bottom: 25px;
+          transition: all 0.5s;
         }
         p {
           font-family: "MontserratLight", sans-serif;
@@ -41,6 +41,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background: #f1eee9;
+            transition: all 0.5s;
           }
         }
       }
