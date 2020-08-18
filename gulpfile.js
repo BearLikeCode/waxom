@@ -42,7 +42,7 @@ var pathStatic = {
   },
   watch: {
     html: "src/**/*.pug",
-    css: "src/scss/partials/*.scss",
+    css: "src/scss/**/*.scss",
     js: "src/js/**/*.js",
     img: "src/img/**/*.+(png|jpg|svg|jpeg)",
     fonts: "src/fonts/**/*.*",
@@ -101,7 +101,7 @@ gulp.task("js:build", function () {
         plumber({
           errorHandler: notify.onError(function (err) {
             return {
-              title: "html",
+              title: "js",
               message: err.message,
             };
           }),
@@ -122,35 +122,39 @@ gulp.task("js:build", function () {
 });
 
 gulp.task("css:build", function () {
-  return gulp
-    .src(pathStatic.src.css)
-    .pipe(
-      plumber({
-        errorHandler: notify.onError(function (err) {
-          return {
-            title: "html",
-            message: err.message,
-          };
-        }),
-      })
-    )
-    .pipe(cached("css"))
-    .pipe(newer(pathStatic.build.css))
-    .pipe(gulpIf(isDevelopment, sourcemaps.init()))
-    .pipe(
-      sass({
-        sourceMap: true,
-        errLogToConsole: true,
-      })
-    )
-    .pipe(
-      prefixer(["last 15 versions", "> 1%", "ie 8", "ie 7"], { cascade: true })
-    )
-    .pipe(cssmin())
-    .pipe(gulpIf(isDevelopment, sourcemaps.write()))
-    .pipe(remember("css"))
-    .pipe(gulp.dest(pathStatic.build.css))
-    .pipe(reload({ stream: true }));
+  return (
+    gulp
+      .src(pathStatic.src.css)
+      .pipe(
+        plumber({
+          errorHandler: notify.onError(function (err) {
+            return {
+              title: "css",
+              message: err.message,
+            };
+          }),
+        })
+      )
+      // .pipe(cached("css"))
+      .pipe(newer(pathStatic.build.css))
+      .pipe(gulpIf(isDevelopment, sourcemaps.init()))
+      .pipe(
+        sass({
+          sourceMap: true,
+          errLogToConsole: true,
+        })
+      )
+      .pipe(
+        prefixer(["last 15 versions", "> 1%", "ie 8", "ie 7"], {
+          cascade: true,
+        })
+      )
+      .pipe(gulpIf(!isDevelopment, cssmin()))
+      .pipe(gulpIf(isDevelopment, sourcemaps.write()))
+      .pipe(remember("css"))
+      .pipe(gulp.dest(pathStatic.build.css))
+      .pipe(reload({ stream: true }))
+  );
 });
 
 gulp.task("img:build", function () {
@@ -160,7 +164,7 @@ gulp.task("img:build", function () {
       plumber({
         errorHandler: notify.onError(function (err) {
           return {
-            title: "html",
+            title: "img",
             message: err.message,
           };
         }),
