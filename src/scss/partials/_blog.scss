@@ -70,17 +70,23 @@
       padding: 35px 30px 30px;
       transition: 0.5s ease;
       h3 {
+        font-family: "RalewayMedium", sans-serif;
+        font-size: 20px;
         color: $grey;
         font-size: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
       p {
+        font-family: "MontserratLight", sans-serif;
+        font-size: 14px;
         color: $lightGrey;
         font-size: 14px;
         line-height: 1.5;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
       a {
+        font-family: "MontserratLight", sans-serif;
+        font-size: 14px;
         color: $light;
         position: relative;
         &:after {
