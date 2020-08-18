@@ -35,8 +35,13 @@
     .navbarLinks {
       display: flex;
       flex-flow: row nowrap;
-      .linksCart {
-        margin-right: 30px;
+      .link {
+        &:hover {
+          cursor: pointer;
+        }
+        &:first-child {
+          margin-right: 30px;
+        }
       }
     }
   }
