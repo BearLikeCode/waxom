@@ -1,29 +1,37 @@
 .features {
   padding: 85px 0 115px;
   .featureItem {
-    max-width: 270px;
-    img {
-      margin-bottom: 35px;
-    }
-    h3 {
-      font-family: "RalewaySemibold", sans-serif;
-      font-size: 22px;
-      margin-bottom: 25px;
-    }
-    p {
-      font-family: "MontserratLight", sans-serif;
-      font-size: 14px;
-      line-height: 1.5;
-      position: relative;
-      &:after {
-        position: absolute;
-        content: "";
-        width: 70px;
-        height: 1px;
-        bottom: -25px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: #f1eee9;
+    max-width: 280px;
+    .item {
+      &Img {
+        height: 47px;
+        margin-bottom: 35px;
+      }
+      &Text {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5px;
+        h3 {
+          font-family: "RalewaySemibold", sans-serif;
+          font-size: 22px;
+          margin-bottom: 25px;
+        }
+        p {
+          font-family: "MontserratLight", sans-serif;
+          font-size: 14px;
+          line-height: 1.5;
+          position: relative;
+          &:after {
+            position: absolute;
+            content: "";
+            width: 70px;
+            height: 1px;
+            bottom: -25px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #f1eee9;
+          }
+        }
       }
     }
   }

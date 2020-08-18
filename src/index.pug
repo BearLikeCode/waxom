@@ -15,8 +15,8 @@ html(lang="en")
             .container
                 .headerNavbar.row
                     img(src="./img/Logo.svg" alt="Waxom").navbarLogo
-                    div.row
-                        ul.navbarMenu
+                    div.navbarBlock
+                        ul.blockMenu
                             li.menuItem
                                 a(href="#").itemLink Home
                             li.menuItem 
@@ -34,8 +34,8 @@ html(lang="en")
                             li.menuItem 
                                 a(href="#").itemLink Contact
                         div.navbarLinks
-                            img(src="./img/CartHeader.svg" alt="cart").cart
-                            img(src="./img/SearchHeader.svg" alt="search").search
+                            img(src="./img/CartHeader.svg" alt="cart").linksCart
+                            img(src="./img/SearchHeader.svg" alt="search").linksSearch
                 .headerText
                     h2.center Unique and Modern Design
                     h1.center Portfolio PSD Template
@@ -45,40 +45,50 @@ html(lang="en")
         .features.container
             .featuresList.row
                 .featureItem
-                    img(src="./img/FeatureItem1.svg" alt="Web & App Design").center
-                    h3.center Web & App Design
-                    p.center Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                    .center.itemImg
+                        img(src="./img/FeatureItem1.svg" alt="Web & App Design")
+                    .center.itemText
+                        h3.center Web & App Design
+                        p.center Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
                 .featureItem
-                    img(src="./img/FeatureItem2.svg" alt="Development").center
-                    h3.center Development
-                    p.center Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+                    .center.itemImg
+                        img(src="./img/FeatureItem2.svg" alt="Development")
+                    .center.itemText
+                        h3.center Development
+                        p.center Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
                 .featureItem
-                    img(src="./img/FeatureItem3.svg" alt="Customization").center
-                    h3.center Customization
-                    p.center Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                    .center.itemImg
+                        img(src="./img/FeatureItem3.svg" alt="Customization")
+                    .center.itemText
+                        h3.center Customization
+                        p.center Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
                 .featureItem
-                    img(src="./img/FeatureItem4.svg" alt="Marketing").center
-                    h3.center Marketing
-                    p.center Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
+                    .center.itemImg
+                        img(src="./img/FeatureItem4.svg" alt="Marketing")
+                    .center.itemText
+                        h3.center Marketing
+                        p.center Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.
 
         .about
             .container
-                h2.title.center Waxom is Realization of your Ideas
+                h2.title.center Waxom is Realization of your Ideas.
                 p.description.center Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
                 img(src="./img/AboutImg.png" alt="about").center
 
-        .pricing.container.row
-            div
-                h2 
-                    span Waxom 
-                    | Multipurpose WordPress Theme
-                p Don't Forget to Rate the Template. Thanks so much!
-            a(href="#") Purchase now
+        .pricing
+            .container
+                .row.pricingRow
+                    .pricingText
+                        h2 
+                            span Waxom 
+                            | Multipurpose WordPress Theme
+                        p Don't Forget to Rate the Template. Thanks so much!
+                    a(href="#") Purchase now
 
 
         .projects.container
-            h2.center Our Latest Projects
-            p.center Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+            h2.center.title Our Latest Projects.
+            p.center.description Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
             .row.projectsRow
                 a(href="#").center All
                 a(href="#").center Web Design
@@ -87,41 +97,41 @@ html(lang="en")
                 a(href="#").center Photography
             .row
                 .project
-                    img(src="./img/#" alt="project1")
-                    h3 Clarits Etiam Processus
-                    p Photography, Nature
+                    img(src="./img/Project1.png" alt="project1")
+                    .projectText
+                        h3 Clarits Etiam Processus
+                        p Photography, Nature
                 .project
-                    img(src="./img/#" alt="project2")
-                    h3 Quam Nutamus Farum
-                    p Graphic Design, Mock-Up
+                    img(src="./img/Project2.png" alt="project2")
+                    .projectText
+                        h3 Quam Nutamus Farum
+                        p Graphic Design, Mock-Up
                 .project
-                    img(src="./img/#" alt="project3")
-                    h3 Usus Legentis Videntur
-                    p Photography, Holiday
+                    img(src="./img/Project3.png" alt="project3")
+                    .projectText
+                        h3 Usus Legentis Videntur
+                        p Photography, Holiday
                 .project
-                    img(src="./img/#" alt="project4")
-                    h3 Clarits Etiam Processus
-                    p Photography, Nature
+                    img(src="./img/Project4.png" alt="project4")
+                    .projectText
+                        h3 Clarits Etiam Processus
+                        p Photography, Nature
                 .project
-                    img(src="./img/#" alt="project5")
-                    h3 Quam Nutamus Farum
-                    p Graphic Design, Mock-Up
+                    img(src="./img/Project5.png" alt="project5")
+                    .projectText
+                        h3 Quam Nutamus Farum
+                        p Graphic Design, Mock-Up
                 .project
-                    img(src="./img/#" alt="project6")
-                    h3 Usus Legentis Videntur
-                    p Photography, Holiday
-            a(href="#").loadMore Load More
-        
-        .video
-            .content
-                h3.center Waxom Video Presentation
-                p.center Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.
-                p.center 03:26
+                    img(src="./img/Project6.png" alt="project6")
+                    .projectText
+                        h3 Usus Legentis Videntur
+                        p Photography, Holiday
+            a(href="#").center.loadMore Load More
 
         .mobile
             .container.row
                 img(src="./img/MobileImg.png" alt="phone")
-                div
+                div.mobileText
                     h2.title Excellent for Mobile Devices.
                     p.description Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
                     ul.menuMobile
@@ -154,7 +164,7 @@ html(lang="en")
                     p.center We launched
         .blog
             .container
-                h2.title.center Recent Posts
+                h2.title.center Recent Posts.
                 p.description.center Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
                 .postSlider.row
                         .post

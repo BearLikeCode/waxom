@@ -1,0 +1,31 @@
+.pricing {
+  background: linear-gradient(to right, #211b19, #4e3427);
+  padding: 55px 0 50px;
+  &Row {
+    padding: 0 30px;
+  }
+  &Text {
+    h2 {
+      font-family: "RalewayRegular", sans-serif;
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 10px;
+      span {
+        color: #c7b299;
+      }
+    }
+    p {
+      font-family: "MontserratLight", sans-serif;
+      font-size: 18px;
+      color: #615855;
+    }
+  }
+  a {
+    padding: 20px 30px;
+    background-color: #998675;
+    color: #f8f7f6;
+    text-transform: uppercase;
+    font-family: "RalewaySemibold", sans-serif;
+    border-radius: 5px;
+  }
+}

@@ -155,6 +155,11 @@ table {
   src: url(../fonts/RalewayMedium.ttf);
 }
 
+@font-face {
+  font-family: RalewayRegular;
+  src: url(../fonts/RalewayRegular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -208,13 +213,14 @@ a {
   color: #9e9e9e;
 }
 
-@import "../partials/header";
-@import "../partials/features";
-@import "../partials/about";
-@import "../partials//projects";
-@import "../partials/mobile";
-@import "../partials/stats";
-@import "../partials/blog";
-@import "../partials/companies";
-@import "../partials/shortcodes";
-@import "../partials/footer";
+@import "../partials/_header";
+@import "../partials/_features";
+@import "../partials/_about";
+@import "../partials/_pricing";
+@import "../partials/_projects";
+@import "../partials/_mobile";
+@import "../partials/_stats";
+@import "../partials/_blog";
+@import "../partials/_companies";
+@import "../partials/_shortcodes";
+@import "../partials/_footer";
