@@ -2,6 +2,17 @@
   padding: 85px 0 115px;
   .featureItem {
     max-width: 280px;
+    transition: all 0.5s;
+    &:hover {
+      .itemText {
+        h3 {
+          color: #c7b299;
+        }
+        p:after {
+          background: #c7b299;
+        }
+      }
+    }
     .item {
       &Img {
         height: 47px;
