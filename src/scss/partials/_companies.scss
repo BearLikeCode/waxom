@@ -2,6 +2,9 @@
   padding: 140px 0;
   background: url("../img/CompaniesBg.png") center no-repeat;
   background-size: cover;
+  &__row-center {
+    align-items: center;
+  }
   img {
     object-fit: contain;
   }
